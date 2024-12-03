@@ -1,5 +1,13 @@
-.nav{
+.header .nav{
+  background-color: $color-main;
+  padding: 2%;
+  width: 40px;
+  height: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  
   &_menu{
     display: none;
   }
