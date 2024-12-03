@@ -1,0 +1,17 @@
+@mixin robotoSlabBold() {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+}
+
+@mixin shopNowForm() {
+border: 2px solid $color-main;
+padding: 5px 20px;
+border-radius: 22.5px;
+}
+
+@mixin shopNowText(){
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
