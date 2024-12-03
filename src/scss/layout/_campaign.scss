@@ -1,0 +1,32 @@
+.campaign{
+    background-color: $color-soft;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+
+    &_title{
+        @include robotoSlabBold();
+        text-align: center;
+        & h3{
+            color: $color-complementary;
+            font-size: 12px;
+            line-height: 30px;
+        }
+        & h2{
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+    }
+
+    & .category {
+        
+        & img{
+            max-width: 100px;
+        }
+
+        & h3{
+            @include robotoSlabBold();
+            font-size: 14px;
+        }
+    }
+}

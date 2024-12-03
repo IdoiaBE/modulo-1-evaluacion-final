@@ -17,7 +17,9 @@
 
     &_text{
         color: $color-complementary;
+        font-family: $font-main;
         font-size: 18px;
+        line-height: 1.67;
     }
 
     & .shopnow{
@@ -27,6 +29,7 @@
         & a{
             @include shopNowText();
             color: $color-main;
+            font-size: 20px;
         }
         
     }
