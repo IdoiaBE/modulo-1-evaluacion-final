@@ -3,11 +3,11 @@
   @include shopNowButton();
   color: $color-main;
   background-color: $color-secondary;
-  margin: 0px 40px;
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 40px;
   @media (min-width: 768px) {
-     max-height: 50px;
-     grid-column: 1/4;
-     margin: 0% 33%;
+    margin: 20px 0px;
   }
 }
 
@@ -15,12 +15,13 @@
   @include shopNowButton();
   color: $color-secondary;
   background-color: $color-main;
-  margin: 0px 40px;
+  display: inline-block;
+  max-width: 200px;
+  margin: 0% 30%;
   @media (min-width: 768px) {
-     max-height: 50px;
+     max-height: 40px;
      grid-column: 1/4;
      margin: 0% 35%;
-     padding: 5px 10px;
   }
 }
 
@@ -33,7 +34,7 @@
   @include scrollLink();
   position: absolute;
   bottom: -4%;
-  right: 48%;
+  right: 45%;
 }
 
 .footer_socials-links,
