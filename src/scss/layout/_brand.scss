@@ -37,13 +37,4 @@
           font-size: 20px;
         }
     }
-
-    & .shopnow{
-        margin-top: 40px;
-        @include shopNowForm();
-        background-color: $color-secondary;
-        @media (min-width: 768px) {
-            margin-top: 20px;
-        }
-    }
 }

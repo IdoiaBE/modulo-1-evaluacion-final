@@ -7,10 +7,19 @@
     text-align: center;
     padding: 10px 10px 30px 10px;
     position: relative;
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px 220px 60px;
+        padding: 10px 30px 40px 30px;
+    }
 
     &_title{
         @include robotoSlabBold();
         text-align: center;
+        @media (min-width: 768px) {
+            grid-column: 1/4;
+        }
+
         & h3{
             color: $color-complementary;
             font-size: 12px;
@@ -19,26 +28,29 @@
         & h2{
             text-transform: uppercase;
             font-size: 20px;
+            @media (min-width: 768px) {
+                font-size: 28px;
+            }
         }
     }
 
     & .category {
-        
+        @media (min-width: 768px) {
+            margin: 20px 0px;
+        }
         & img{
             @include categoryImg();
+            margin-bottom: 5px;
         }
 
         & h3{
             @include robotoSlabBold();
             font-size: 14px;
+            @media (min-width: 768px) {
+                font-size: 18px;
+            }
         }
 
-    }
-
-    & .shopnow{
-        margin: 0px 40px;
-        @include shopNowForm();
-        background-color: $color-main;
     }
 
 }
