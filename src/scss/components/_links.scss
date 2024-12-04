@@ -22,3 +22,11 @@
   @include scrollLink();
   margin-top: 20px;
 }
+
+.campaign .link_scroll{
+  @include scrollLink();
+  //margin: 0px 125px;
+  position: absolute;
+  bottom: -30px;
+  right: 80px;
+}

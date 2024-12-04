@@ -2,7 +2,11 @@
     background-color: $color-soft;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 60px 180px 180px 180px;
+    gap: 10px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
 
     &_title{
         @include robotoSlabBold();
@@ -21,17 +25,18 @@
     & .category {
         
         & img{
-            max-width: 100px;
+            @include categoryImg();
         }
 
         & h3{
             @include robotoSlabBold();
             font-size: 14px;
         }
+
     }
 
     & .shopnow{
-        //margin-top: 40px;
+        margin: 0px 40px;
         @include shopNowForm();
         background-color: $color-main;
     }
