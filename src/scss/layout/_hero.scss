@@ -29,10 +29,7 @@
         line-height: 20px;
     }
 
-    & a{
-        background-color: $color-secondary;
-        padding: 10px;
-        border-radius: 50%;
-        margin-top: 15px;
+    & .link_scroll img{
+        vertical-align: middle;
     }
 }

@@ -29,4 +29,11 @@
             font-size: 14px;
         }
     }
+
+    & .shopnow{
+        //margin-top: 40px;
+        @include shopNowForm();
+        background-color: $color-main;
+    }
+
 }
