@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 40px;
 
     & h1{
@@ -16,17 +17,28 @@
         font-weight: bold;
         font-size: 30px;
         text-transform: uppercase;
-        text-align: center;
         line-height: 50px;
-        padding-top: 270px;
+        padding-top: 310px;
         padding-bottom: 10px;
+        @media (min-width: 768px) {
+            font-size: 75px;
+            line-height: 100px;
+        }
+        @media (min-width: 1280px){
+            margin: 0px 500px;
+        }
     }
 
     & p{
         font-family: $font-main;
         font-size: 16px;
-        text-align: center;
         line-height: 20px;
+        padding-bottom: 10px;
+        @media (min-width: 768px){
+            font-size: 24px;
+            margin: 0px 200px;
+            line-height: 28px;
+        }
     }
 
     & .link_scroll img{
