@@ -5,14 +5,14 @@
 
 @mixin scrollLink(){
   background-color: $color-secondary;
-  padding: 12px;
+  padding: 12px 14px;
   border-radius: 50%;
 }
 
 @mixin shopNowButton() {
 border: 2px solid $color-main;
-padding: 10px 0px;
-border-radius: 22.5px;
+border-radius: 23px;
+padding: 12px 25px;
 font-family: "Roboto";
 text-decoration: none;
 font-weight: 600;
@@ -26,7 +26,6 @@ font-size: 20px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-@mixin centeredLineGap(){
-  text-align: center;
+@mixin lineHeight30(){
   line-height: 30px;
 }

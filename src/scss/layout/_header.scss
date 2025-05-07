@@ -1,4 +1,4 @@
-.header .nav{
+.header_nav{
   background-color: $color-main;
   padding: 2%;
   width: 40px;
@@ -7,8 +7,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  
-  &_menu{
-    display: none;
-  }
+}
+
+.header .nav_menu{
+  display: none;
 }

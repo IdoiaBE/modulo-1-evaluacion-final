@@ -1,23 +1,21 @@
 .campaign{
     background-color: $color-soft;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60px 180px 180px 180px;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    gap: 10px;
     padding: 10px 10px 30px 10px;
     position: relative;
     @media (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 60px 220px 60px;
-        padding: 10px 30px 40px 30px;
+        padding: 10px 20px 40px 20px;
     }
 
     &_title{
         @include robotoSlabBold();
         text-align: center;
         @media (min-width: 768px) {
-            grid-column: 1/4;
+           
         }
 
         & h3{
@@ -34,23 +32,29 @@
         }
     }
 
-    & .category {
+    &_articles{
+        
         @media (min-width: 768px) {
-            margin: 20px 0px;
+            display: flex;
+            gap: 90px;
+            margin: 10px 0px;
         }
-        & img{
-            @include categoryImg();
-            margin-bottom: 5px;
-        }
-
-        & h3{
-            @include robotoSlabBold();
-            font-size: 14px;
-            @media (min-width: 768px) {
-                font-size: 18px;
-            }
-        }
-
     }
 
+}
+
+.category {
+        
+    & img{
+        @include categoryImg();
+        margin-bottom: 5px;
+    }
+
+    & h3{
+        @include robotoSlabBold();
+        font-size: 14px;
+        @media (min-width: 768px) {
+            font-size: 18px;
+        }
+    }
 }

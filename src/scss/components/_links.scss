@@ -15,19 +15,7 @@
   @include shopNowButton();
   color: $color-secondary;
   background-color: $color-main;
-  display: inline-block;
-  max-width: 200px;
-  margin: 0% 25%;
-  @media (min-width: 768px) {
-     max-height: 40px;
-     grid-column: 1/4;
-     margin: 0% 38%;
-  }
-  @media (min-width: 1280px){
-    margin: 0% 40%;
-    max-width: 400px;
-    min-height: 50px;
-  }
+  margin-top: 5px;
 }
 
 .hero .link_scroll{
@@ -39,12 +27,8 @@
   @include scrollLink();
   position: absolute;
   bottom: -4%;
-  right: 42%;
   @media (min-width: 768px){
-    right: 47%;
-  }
-  @media (min-width: 1280px){
-    right: 48%;
+    bottom: -7%;
   }
 }
 
@@ -54,5 +38,4 @@
   font-family: $font-main;
   text-decoration: none;
   text-transform: uppercase;
-  
 }
