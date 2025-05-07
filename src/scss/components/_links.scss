@@ -6,6 +6,11 @@
   display: inline-block;
   margin-top: 40px;
   padding: 10px 40px;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+
   @media (min-width: 768px) {
     margin: 20px 0px;
   }
@@ -20,13 +25,20 @@
 
 .hero .link_scroll{
   @include scrollLink();
+  padding: 15px 14px;
   margin-top: 20px;
+  margin-bottom: 40px;
+  @media (min-width: 768px){
+    margin-bottom: 0px;
+  }
 }
 
 .campaign .link_scroll{
   @include scrollLink();
+  padding: 12px 14px;
   position: absolute;
   bottom: -4%;
+
   @media (min-width: 768px){
     bottom: -7%;
   }
